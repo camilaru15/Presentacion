@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+    <!--conexion con css-->
+    <link href="diseño.css" rel="stylesheet" id="text/css">
+    <!--Etiqueta usada para colocar el autor de la página web-->
+    <meta name='author' content='Camila'>
+    <!--Etiqueta usada para colocar las palabras con las cuales se indexara la página y se podrá encontrar por google-->
+    <meta name='keywords' content='Maria Camila Rueda Cano'>
+    <!--Etiqueta usada para decirle al navegador que se usarán el tipo de codificación utf-8 o para caracteres especiales-->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <!--Etiqueta usada para colocar el nombre en la pestaña del navegador web-->
+    <title>Examen Fundamentos de HTML</title>
+    <!--Etiqueta usada para dar una descripción de la página web-->
+    <meta name='description' content='primer examen html'>
+  </head>
+  <body>
+    <!--Encabezado de la pagina-->
+    <header>
+      <img src='C:\Users\camil\OneDrive\Escritorio\Universidad\ProgramacionIV\tareaUno\multimedia\imagenes\logo.png'height='80%' width='40%'>
+  </header>
+    <!--titulo Principal-->
+    <h1> Hoja de vida </h1>
+    <!--nav usado para agrupar los elementos del menú-->
+    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="paginaPrincipal.html"> Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="educacion.html"> Educacion </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="experiencia.html">Experiencia</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="texto">
+      <!--Titulo-->
+      <h2><b>Experiencia</b></h2>
+      <!--subtitulo-->
+      <h3><em>Video Introductorio</em></h3>
+      <div id="video">
+        <!--Etiqueta usada para colocar video en nuestra web pero se debe colocar con el atributo controls ya que este coloca barra de reproducción botón de pausa y volumen-->
+        <!--el atributo poster sirve para colocar una imagen de previsualización-->
+        <video class="video" width='320' height='240' controls poster='C:\Users\camil\OneDrive\Escritorio\Universidad\ProgramacionIV\tareaUno\multimedia\imagenes\imagenVideo.png'>
+        <!--Se colocan diferentes versiones de video para que el navegador tome alguna ya que los navegadores no tiene compatibilidad con los formatos de video-->
+        <source src='\Users\camil\OneDrive\Escritorio\Universidad\ProgramacionIV\tareaUno\multimedia\video\Presentacion.mp4' type='video/mp4'>
+        <!--<source src='movie.ogg' type='video/ogg'>-->
+        </video>
+      </div>
+      <fdiv id="audio">
+        <!--sibtitulo-->
+        <h3><em>Audio Introductorio</em></h3>
+        <audio controls>
+          <!--Se colocan diferentes versiones de audio para que el navegador tome alguna ya que los navegadores no tiene compatibilidad con todos los formatos de audio-->
+          <!--<source src='audio/Canon.ogg' type='audio/ogg'>-->
+          <source src='\Users\camil\OneDrive\Escritorio\Universidad\ProgramacionIV\tareaUno\multimedia\audio\audio.ogg' type='audio/ogg'>
+          <!--Si ninguno de estos formatos es compatible con el navegador se muestra un mensaje-->
+          Tu Navegador no soporta este elemento de audio
+        </audio>      
+      </div>
+    </div>
+  </body>
+  <footer class="footer">
+    <p><b>Email:</b> camilarueda715@gmail.com</p>
+    <b>Telefono:</b> 3136646819</p>
+    <p><b>Direccion:</b> cra 17 #62-35 apto 501b La toscana</p>
+  </footer>
+</html>
