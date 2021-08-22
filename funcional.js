@@ -7,11 +7,11 @@ $(document).ready(function() {
     var _año = document.getElementById("año").value;
     var _instituto = document.getElementById("instituto").value;
     var _lugar = document.getElementById("lugar").value;
-    var _culmino = document.getElementById("culmino").value;
+    var _si = document.getElementById("pregunta_si").value;
+    var _no = document.getElementById("pregunta_no").value;
 
     var i = 1; //contador para asignar id al boton que borrara la fila
-    var fila = '<tr id="row' + i + '"><td>' + _año + '</td><td>' + _instituto + '</td><td>' + _lugar+ '</td><td>' + _culmino+ '</td><td>';
-   // <button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
+    var fila = '<tr id="row' + i + '"><td>' + _año + '</td><td>' + _instituto + '</td><td>' + _lugar+ '</td><td>'+ _si+ '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>';
   
     i++;
   
@@ -22,7 +22,8 @@ $(document).ready(function() {
       //le resto 1 para no contar la fila del header
       document.getElementById("instituto").value ="";
       document.getElementById("lugar").value = "";
-      document.getElementById("culmino").value = "";
+      document.getElementById("si").value = "";
+      document.getElementById("no").value = "";
       document.getElementById("año").value = "";
       document.getElementById("año").focus();
     });

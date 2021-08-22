@@ -52,7 +52,6 @@
     <div class="texto">
         <!--titulo-->
         <h2><b>Educacion</b></h2>
-        <div id="adicionados"></div>
         <!-- El atributo border sirve para colocarle un grosor al borde de la tabla por defecto esto viene en 0-->
         <table border='1' class="table" table  id="mytable">
           <!--Cabecera de la tabla-->
@@ -69,15 +68,22 @@
           <!--Fila-->
             <tr>
               <!--Columna-->
-              <td>2017</td>
+              <td>2019-20-05</td>
               <td>Universidad de Manizales</td>
               <td>Manizales</td>
               <td>Si</td>
             </tr>
             <tr>
               <!--Columna-->
-              <td>2019</td>
+              <td>2018-04-10</td>
               <td>Universidad de Manizales</td>
+              <td>Manizales</td>
+              <td>Si</td>
+            </tr>
+            <tr>
+              <!--Columna-->
+              <td>2017-12-10</td>
+              <td>Escuela Nacional Auxiliares de Enfermeria</td>
               <td>Manizales</td>
               <td>Si</td>
             </tr>
@@ -93,7 +99,7 @@
             <div class="form-group">
                 <p>
                   <label>Ingrese el año:</label> <br>
-                  <input id="año" class="form-control" type="text" placeholder="Año..."><br>
+                  <input id="año" class="form-control" type="date" placeholder="Año..."><br>
                 </p>
                 <p>
                   <label>Ingrese el Instituto:</label> <br>
@@ -105,7 +111,8 @@
                 </p>
                 <p>
                   <label>¿Culmino?:</label> <br>
-                  <input id="culmino" class="form-control" type="text" placeholder="si o no"> <br>
+                  <input type="radio" value="si" name="pregunta" id="pregunta_si"/> SI
+                  <input type="radio" value="no" name="pregunta" id="pregunta_no"/> NO
                 </p>
                 <button id="adicionar" class="btn btn-secondary" type="button">Adicionar</button>
               </div>
