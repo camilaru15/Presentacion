@@ -10,7 +10,6 @@ $(document).ready(function() {
     var _si = document.getElementById("pregunta_si").value;
     var _no = document.getElementById("pregunta_no").value;
 
-    var i = 1; //contador para asignar id al boton que borrara la fila
     var fila = '<tr id="row' + i + '"><td>' + _año + '</td><td>' + _instituto + '</td><td>' + _lugar+ '</td><td>'+ _si+ '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>';
   
     i++;
